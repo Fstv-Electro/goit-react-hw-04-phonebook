@@ -45,7 +45,7 @@ export const App = () => {
   };
 
   const onDeleteContacts = id => {
-    setContacts(prevState => (prevState.contacts.filter(item => item.id !== id)))
+    setContacts(contacts.filter(item => item.id !== id))
   };
   
   return (
